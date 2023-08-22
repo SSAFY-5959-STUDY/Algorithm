@@ -28,7 +28,7 @@ public class BOJ1890 {
 		cnt[0][0] = 1;
 		for (int r = 0; r < n; r++) {
 			for (int c = 0; c < n; c++) {
-                if (map[r][c] == 0) // 움직일 수 없는 지점 pass
+                		if (map[r][c] == 0) // 움직일 수 없는 지점 pass
 					continue;
 				if (cnt[r][c] > 0) { // 점프할 수 있는 지점
 					int next_c = c + map[r][c]; // 오른쪽으로 점프
